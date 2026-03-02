@@ -13,3 +13,15 @@ from utils import factorial
 if __name__ == "__main__":
     number = 5
     print(f"Факторіал числа {number} дорівнює {factorial(number)}")
+import utils
+
+test_val = 125
+if utils.is_power_of_five(test_val):
+    print(f"Число {test_val} є степенем 5")
+else:
+    print(f"Число {test_val} не є степенем 5")
+
+numbers_to_check = [1, 5, 20, 25, 100]
+print("\n--- Перевірка списку чисел на степінь 5 ---")
+for n in numbers_to_check:
+    print(f"{n}: {utils.is_power_of_five(n)}")
