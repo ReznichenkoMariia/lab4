@@ -7,7 +7,7 @@ print (f"Число 24 парне? {is_even(10)}")
 
 import utils 
 
-number = 17 
+number = 15 
 if utils.is_prime(number):
     print(f"Число {number} є простим")
 else:
