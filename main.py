@@ -1,4 +1,15 @@
 
+from utils import factorial, lsd
+
+def main():
+    print("factorial(5) =", factorial(5))
+    print("lsd(12345) =", lsd(12345))
+
+if name == "__main__":
+    main()
+
+=======
+
 a, b = 48, 18
     print(f"НСД({a}, {b}) = {gcd(a, b)}")
 
@@ -12,3 +23,4 @@ if utils.is_prime(number):
     print(f"Число {number} є простим")
 else:
     print(f"Число {number} не є простим")
+
