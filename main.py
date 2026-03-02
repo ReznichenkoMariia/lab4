@@ -8,11 +8,15 @@ for num in test_numbers:
     else:
         print(f"Число {num} НЕ є степенем двійки")
 
+def is_power_of_two(n: int) -> bool:
+    return n > 0 and (n & (n - 1)) == 0
+
 from utils import factorial
 
 if __name__ == "__main__":
     number = 5
     print(f"Факторіал числа {number} дорівнює {factorial(number)}")
+
 import utils
 
 test_val = 125
