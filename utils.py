@@ -1,3 +1,12 @@
+def sum_digits(n: int) -> int:
+    n = abs(n)
+    s = 0
+    while n:
+        s += n % 10
+        n //= 10
+    return s
+def is_power_of_two(n: int) -> bool:
+    return n > 0 and (n & (n - 1)) == 0
 def factorial(n):
     if n < 0:
         raise ValueError("Факторіал не визначений для від'ємних чисел")
